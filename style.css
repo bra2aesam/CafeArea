@@ -1,0 +1,176 @@
+
+
+:root{
+    --option-color:#5d869b;
+   --font-light-color:white;
+   --font-dark-color:rgb(42 30 12);
+    --box-shadow:0 .5rem 1rem rgba(0, 0, 0,0.441);
+    --border-radius: .5rem;
+    --light-border:.05rem solid white;
+ }
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+body,
+html{
+    scroll-behavior: smooth;
+    /* color:var(--font-light-color) !important; */
+}
+
+section{
+    margin:0 auto;
+    padding:2rem;
+    text-align: center;
+}
+
+section h1{
+    text-transform: capitalize;
+}
+
+/* .header{
+background: rgba(103, 144, 165, 1.0);
+background: -webkit-radial-gradient(bottom right, rgba(103, 144, 165, 1.0), rgba(51, 84, 106, 1.0));
+background: -moz-radial-gradient(bottom right, rgba(103, 144, 165, 1.0), rgba(51, 84, 106, 1.0));
+background: radial-gradient(to top left, rgba(103, 144, 165, 1.0), rgba(51, 84, 106, 1.0));
+}
+.header{
+background: rgba(241, 233, 221, 1.0);
+background: -webkit-radial-gradient(bottom right, rgba(241, 233, 221, 1.0), rgba(187, 170, 145, 1.0));
+background: -moz-radial-gradient(bottom right, rgba(241, 233, 221, 1.0), rgba(187, 170, 145, 1.0));
+background: radial-gradient(to top left, rgba(241, 233, 221, 1.0), rgba(187, 170, 145, 1.0));
+} */
+
+/*================= Header Section ==================*/
+
+.navbar-nav{
+    color: var(--font-light-color) !important;
+    
+}
+.menuList a{
+    color:var(--font-light-color) !important;
+
+}
+
+.dropdown-menu{
+    background-image: url(./image/home-bg.jpg)!important;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    border-radius: var(--border-radius);
+    border:var(--light-border) !important;
+}
+.dropdown-menu a:hover{
+    background-color: var(--font-light-color);
+    color: var(--font-dark-color) !important;
+}
+.header{
+    background-image: url(./image/home-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--font-light-color) !important;
+}
+
+#reservForm{
+    margin: auto;
+    background-image: linear-gradient(
+        75deg,
+        hsl(30deg 31% 75%) 0%,
+        hsl(30deg 37% 87%) 20%,
+        hsl(30deg 33% 81%) 40%,
+        hsl(30deg 33% 81%) 60%,
+        hsl(30deg 37% 87%) 80%,
+        hsl(30deg 31% 75%) 100%
+      );
+
+      box-shadow: var(--box-shadow);
+      margin-top: -2% !important;
+}
+
+/*================= card Section ==================*/
+.card {
+   
+    border-radius: var(--border-radius);
+    background-image: linear-gradient(
+        75deg,
+        /* hsl(30deg 31% 75%) 0%, */
+        hsl(30deg 37% 87%) 20%,
+        hsl(30deg 33% 81%) 40%,
+        hsl(30deg 33% 81%) 60%,
+        /* hsl(30deg 37% 87%) 80%, */
+        hsl(30deg 31% 75%) 100%
+      );
+    position: relative;
+    padding: 1.8rem;
+    /* border: 2px solid #f3f3f3; */
+    transition: 0.5s ease-out;
+    overflow: visible;
+   }
+   
+   .card-details {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+   }
+   
+   .card-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color:var(--option-color) !important;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+   }
+   
+   .text-body {
+    color: rgb(134, 134, 134);
+   }
+   
+   /*Text*/
+   .text-title {
+    font-size: 1.5em;
+    font-weight: bold;
+   }
+   
+   /*Hover*/
+   .card:hover {
+    border-color:var(--option-color);
+    box-shadow: 0 4px 18px 0 rgba(62, 53, 53, 0.767);
+   }
+   
+   .card-button:hover{
+    background-image: url(./image/home-bg.jpg) !important;
+
+   }
+   .card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+   }
+
+/*================= footer Section ==================*/
+
+footer{
+    color: var(--font-light-color) !important;
+    background-image: url(./image/home-bg.jpg)!important;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.fook{
+    color: var(--font-light-color) !important;
+}
+
+a{
+    color: var(--font-light-color) !important;
+}
